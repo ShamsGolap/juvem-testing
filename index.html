@@ -22,14 +22,14 @@
       </nav>
       <div class="hero-grid" id="contenu">
         <div>
-          <p class="kicker"><span class="spark" aria-hidden="true"></span> Programme de test Android · En préparation</p>
+          <p class="kicker"><span class="spark" aria-hidden="true"></span> Programme de test Android · Bêta 1 en préparation</p>
           <h1>Aidez-nous à rendre Juvem plus simple à utiliser.</h1>
           <p class="lead">Juvem permet de noter son humeur, d’écrire et d’essayer des exercices simples. Avant son arrivée sur Google Play, nous souhaitons vérifier que chaque écran est clair, accessible et agréable à utiliser.</p>
           <div class="actions">
             <a class="button button-primary" href="#participer">Découvrir comment participer <span aria-hidden="true">↗</span></a>
             <a class="button button-ghost" href="#tester">Ce que vous pourrez tester</a>
           </div>
-          <p class="small light">Première version prévue : <strong>Juvem Bêta 1 (0.1.0-beta.1)</strong> · Pas encore distribuée</p>
+          <p class="small light"><strong>Juvem Bêta 1 (0.1.0-beta.1)</strong> · Code intégré · Tests Android non encore validés</p>
           <p class="small light">Gratuit · Sans publicité · Sans compte Juvem · Android 10 ou version ultérieure</p>
         </div>
         <div class="hero-art" aria-hidden="true">
@@ -67,7 +67,7 @@
     <section class="section section-tint" id="installer">
       <div class="container split">
         <div><span class="eyebrow">02 / Installation</span><h2>Le bon lien, au bon moment.</h2><p>Une version de test Google Play est prévue sous le package <code>com.golappstudio.juvem</code>. Une APK distincte <strong>Juvem Preview</strong> utilisera <code>com.golappstudio.juvem.preview</code> pour les scénarios fictifs. Aucun lien de téléchargement vérifié n’est encore publié.</p><p>Après validation de votre inscription, vous devrez ouvrir le lien d’invitation avec le <strong>même compte Google</strong> que celui autorisé pour le test, puis installer Juvem depuis la fiche Play Store.</p><p>Si Google Play vous demande de rester inscrit pendant une durée minimale de test, suivez les consignes fournies dans l’invitation. Vous restez libre d’arrêter votre participation.</p></div>
-        <aside class="status-card"><div class="status-icon" aria-hidden="true">⌛</div><h3>Distribution en préparation</h3><p>La fiche Google Play, le canal de test et la Preview doivent encore être vérifiés sur appareil. Les liens d’installation apparaîtront ici uniquement lorsqu’ils fonctionneront.</p><span class="status-chip">Aucun APK public pour le moment</span></aside>
+        <aside class="status-card"><div class="status-icon" aria-hidden="true">⌛</div><h3>Distribution en préparation</h3><p>La Bêta 1 est regroupée dans le dépôt de développement, mais elle doit encore être compilée et testée sur téléphone. La fiche Google Play et les liens d’installation ne seront annoncés qu’après vérification.</p><span class="status-chip">Aucun APK public pour le moment</span></aside>
       </div>
     </section>
 
@@ -76,7 +76,7 @@
         <div class="section-head">
           <span class="eyebrow">Preview Android · À venir</span>
           <h2>Tester sans utiliser ses données personnelles.</h2>
-          <p>La future application <strong>Juvem Preview</strong> sera séparée de Juvem et proposera quatre jeux de données entièrement fictifs. Elle pourra être installée à côté de la version Play Store, sans toucher à son journal.</p>
+          <p>La version <strong>Juvem Preview</strong> est prévue avec un identifiant Android distinct de celui de Juvem et quatre jeux de données entièrement fictifs. Sa compilation et son installation doivent encore être validées ; elle n’est pas proposée au téléchargement pour le moment.</p>
         </div>
         <div class="grid two">
           <article class="card"><h3>Découverte</h3><p>3 humeurs et 2 notes fictives pour prendre en main l'application.</p></article>
@@ -88,9 +88,9 @@
           <span class="notice-symbol" aria-hidden="true">!</span>
           <div><strong>Comment charger un scénario ?</strong>
             <p>Dans la Preview : <strong>Paramètres → Outils de test — Preview → Charger des données de test</strong>. Confirmez le remplacement des données de cette Preview. Les scénarios ne contiennent aucun contact réel.</p>
-            <p>Vous pourrez aussi vérifier le bouton « Réessayer » en cas d’échec d’enregistrement et l’importation d’une sauvegarde lorsque le stockage local est inaccessible.</p>
-            <p>Vous pourrez également tester l'export/import depuis <strong>Paramètres → Mes données</strong>. Les fichiers <code>.juvem</code> sont chiffrés avec un mot de passe personnel d'au moins 12 caractères. Un import remplace les données de l'application concernée, après confirmation.</p>
-            <p>Évitez d'utiliser des informations réelles et <strong>ne partagez jamais un fichier de sauvegarde ou son mot de passe</strong> avec GolApp Studio. La Preview n'est pas encore distribuée : aucun lien APK n'est annoncé avant validation.</p>
+            <p>Testez aussi la récupération après une erreur d’enregistrement : Juvem doit proposer « Réessayer » et, si nécessaire, la restauration d’une sauvegarde chiffrée. Si une ancienne copie locale est récupérée, l’application doit prévenir que les changements récents peuvent manquer.</p>
+            <p>Essayez l’export/import depuis <strong>Paramètres → Mes données</strong>. Les fichiers <code>.juvem</code> sont chiffrés avec un mot de passe personnel d’au moins 12 caractères. Vérifiez l’annulation, les erreurs de mot de passe et la confirmation avant tout remplacement de données.</p>
+            <p>Utilisez uniquement des scénarios fictifs et <strong>ne partagez jamais un fichier de sauvegarde ou son mot de passe</strong> avec GolApp Studio. Aucun lien APK n’est publié tant que l’installation et la sécurité n’ont pas été contrôlées.</p>
           </div>
         </div>
       </div>
@@ -106,6 +106,7 @@
           <div class="check-card"><div class="check-icon" aria-hidden="true">04</div><div><h3>Choisir une activité</h3><p>Choisir une activité selon ses besoins, puis ouvrir les exercices complémentaires uniquement si vous le souhaitez.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">05</div><div><h3>Faire une pause</h3><p>Essayer les pauses de 30, 60 ou 90 secondes et vérifier qu’il est facile de les arrêter.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">06</div><div><h3>Affichage, langue et confort</h3><p>Dans les paramètres, essayer les thèmes clair, sombre et « suivre le téléphone ». Passer du français à l’anglais, puis revenir à la langue du téléphone. Vérifier aussi les grands caractères, le défilement des longs écrans et la conservation des préférences après redémarrage.</p></div></div>
+          <div class="check-card"><div class="check-icon" aria-hidden="true">07</div><div><h3>Sauvegardes et récupération</h3><p>Avec des données fictives, exporter un fichier chiffré, le réimporter, essayer un mauvais mot de passe et vérifier que les données ne changent pas sans confirmation.</p></div></div>
         </div>
         <div class="notice"><span class="notice-symbol" aria-hidden="true">!</span><div><strong>Écrans d’aide et numéros de secours</strong><p>Vérifiez seulement que les informations sont lisibles. <strong>N'effectuez pas d'appels de test</strong> au 15, 112 ou 3114. Les boutons de l'application ouvrent le composeur de votre téléphone : ne confirmez pas l’appel pour tester l’interface.</p></div></div>
       </div>
@@ -126,7 +127,7 @@
     </section>
 
     <section class="section privacy-section" id="confidentialite">
-      <div class="container split"><div><span class="eyebrow">05 / Vie privée &amp; sécurité</span><h2>Votre intimité ne fait pas partie du test.</h2><p>Juvem stocke les notes, humeurs, préférences d’affichage et de langue et informations de soutien dans un espace <strong>chiffré sur l’appareil</strong>. Aucun compte Juvem, publicité ni service d'analyse intégré n'est prévu dans cette version.</p><p>Utilisez de préférence des exemples fictifs. Évitez les informations sensibles dans les e-mails, captures et rapports de bugs. Désinstaller l'application peut rendre ses notes irrécupérables.</p><a class="text-link" href="https://shamsgolap.github.io/juvem-privacy/">Lire la politique de confidentialité <span aria-hidden="true">↗</span></a></div>
+      <div class="container split"><div><span class="eyebrow">05 / Vie privée &amp; sécurité</span><h2>Votre intimité ne fait pas partie du test.</h2><p>Juvem stocke les notes, humeurs et préférences dans un espace <strong>chiffré sur l’appareil</strong>, avec une copie locale chiffrée de récupération. Les exports sont également chiffrés. Aucun compte Juvem, publicité ni service d’analyse intégré n’est prévu dans cette version.</p><p>Utilisez de préférence des exemples fictifs. Évitez les informations sensibles dans les e-mails, captures et rapports de bugs. Désinstaller l'application peut rendre ses notes irrécupérables.</p><a class="text-link" href="https://shamsgolap.github.io/juvem-privacy/">Lire la politique de confidentialité <span aria-hidden="true">↗</span></a></div>
       <aside class="safety"><h3>Juvem ne remplace pas des soins</h3><p>L’application n’est pas un dispositif médical, un service d'écoute en direct ni un outil d’urgence. Il n’est jamais nécessaire de provoquer une situation pénible pour tester une fonction.</p><p>En France, si vous avez besoin de soutien face à des idées suicidaires, le <strong>3114</strong> est accessible. En cas de danger immédiat : <strong>15</strong> ou <strong>112</strong>.</p><p class="small">Ces numéros sont destinés à des situations réelles, pas à des essais.</p></aside></div>
     </section>
   </main>
