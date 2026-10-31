@@ -66,3 +66,26 @@ code{font-family:ui-monospace,SFMono-Regular,monospace;background:#d5e5dc;paddin
 @media (max-width:900px){.hero-grid,.split{grid-template-columns:1fr;gap:34px}.hero-grid{padding-top:35px}.hero-art{min-height:470px}.nav-links{gap:12px}.three{grid-template-columns:1fr}.invitation{grid-template-columns:1fr}}
 @media (max-width:600px){.container{width:min(100% - 30px,1140px)}.navigation{align-items:flex-start}.nav-links{flex-wrap:wrap;justify-content:flex-end;gap:8px 14px;font-size:.82rem}.hero-grid{padding:20px 0 80px}.hero-art{min-height:420px}.phone{transform:scale(.84) rotate(5deg)}.art-caption{bottom:-25px}.section{padding:62px 0}.two{grid-template-columns:1fr}.card,.check-card,.status-card,.report{padding:21px}.invitation{padding:24px}.footer-grid{flex-direction:column}h1{font-size:2.65rem}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.button{transition:none}}
+
+
+/* Juvem 0.1 — a calm, accessible reading rhythm. Never compress cards to fit a screen. */
+.section{padding-top:clamp(64px,8vw,108px);padding-bottom:clamp(64px,8vw,108px)}
+.section-head{margin-bottom:clamp(32px,5vw,56px)}
+.section-head p,.split p,.lead{line-height:1.85;max-width:68ch}
+.cards,.check-grid{gap:clamp(18px,2.8vw,32px)}
+.card,.check-card{padding:clamp(24px,3vw,36px)}
+.card p,.check-card p{line-height:1.8}
+.button{min-height:48px;padding:16px 24px}
+.nav-links a,.footer-links a{display:inline-flex;align-items:center;min-height:44px}
+a:focus-visible{outline:3px solid #e99f68;outline-offset:5px}
+@media(max-width:720px){
+  .hero-grid{gap:32px;padding-top:48px;padding-bottom:72px}
+  .section{padding-top:64px;padding-bottom:64px}
+  .card,.check-card{padding:26px}
+  .actions{gap:16px}
+  .button{width:100%;justify-content:center}
+}
+@media(prefers-reduced-motion:reduce){
+  .button{transition:none}
+  .button:hover{transform:none}
+}
