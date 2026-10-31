@@ -18,7 +18,7 @@
     <div class="container">
       <nav class="navigation" aria-label="Navigation principale">
         <a class="brand" href="#haut" aria-label="Juvem, accueil du site de test"><span class="mark" aria-hidden="true">j.</span><span>juvem<span class="brand-period">.</span></span></a>
-        <div class="nav-links"><a href="#participer">Participer</a><a href="#tester">À tester</a><a href="#retours">Vos retours</a><a href="https://shamsgolap.github.io/juvem-privacy/">Confidentialité</a></div>
+        <div class="nav-links"><a href="#participer">Participer</a><a href="#preview">Preview</a><a href="#tester">À tester</a><a href="#retours">Vos retours</a><a href="https://shamsgolap.github.io/juvem-privacy/">Confidentialité</a></div>
       </nav>
       <div class="hero-grid" id="contenu">
         <div>
@@ -50,7 +50,7 @@
   <main>
     <section class="section" id="participer">
       <div class="container">
-        <div class="section-head"><span class="eyebrow">01 / Rejoindre le test</span><h2>Participer en trois étapes</h2><p>Le test Google Play n’est <strong>pas encore ouvert</strong>. L’inscription ne sera possible qu’après mise en place du canal fermé et confirmation de votre accès.</p></div>
+        <div class="section-head"><span class="eyebrow">01 / Rejoindre le test</span><h2>Participer en trois étapes</h2><p>Le test Google Play n’est <strong>pas encore ouvert</strong>. Vous pouvez demander à participer, puis attendre l’ouverture effective des accès. Une Preview séparée sera proposée pour tester des données fictives.</p></div>
         <div class="grid three">
           <article class="card"><span class="step">01</span><h3>Demander à participer</h3><p>Envoyez un e-mail avec l’adresse Google utilisée sur votre Play Store. C’est elle qui servira à autoriser l’accès au test.</p></article>
           <article class="card"><span class="step">02</span><h3>Attendre notre feu vert</h3><p>Après ajout à la liste des personnes autorisées, GolApp Studio vous transmettra les étapes et le lien officiel Google Play.</p></article>
@@ -65,8 +65,32 @@
 
     <section class="section section-tint" id="installer">
       <div class="container split">
-        <div><span class="eyebrow">02 / Installation</span><h2>Le bon lien, au bon moment.</h2><p>Le futur test sera distribué via <strong>Google Play</strong> et le package <code>com.golappstudio.juvem</code>. Pour le moment, aucun lien de participation ni de téléchargement n’est publié.</p><p>Après validation de votre inscription, vous devrez ouvrir le lien d’invitation avec le <strong>même compte Google</strong> que celui autorisé pour le test, puis installer Juvem depuis la fiche Play Store.</p><p>Si Google Play vous demande de rester inscrit pendant une durée minimale de test, suivez les consignes fournies dans l’invitation. Vous restez libre d’arrêter votre participation.</p></div>
-        <aside class="status-card"><div class="status-icon" aria-hidden="true">⌛</div><h3>Test fermé en préparation</h3><p>La fiche Google Play et le canal de test doivent encore être configurés. Les liens d’installation apparaîtront ici uniquement lorsqu’ils seront vérifiés.</p><span class="status-chip">Aucun APK public pour le moment</span></aside>
+        <div><span class="eyebrow">02 / Installation</span><h2>Le bon lien, au bon moment.</h2><p>Une version de test Google Play est prévue sous le package <code>com.golappstudio.juvem</code>. Une APK distincte <strong>Juvem Preview</strong> utilisera <code>com.golappstudio.juvem.preview</code> pour les scénarios fictifs. Aucun lien de téléchargement vérifié n’est encore publié.</p><p>Après validation de votre inscription, vous devrez ouvrir le lien d’invitation avec le <strong>même compte Google</strong> que celui autorisé pour le test, puis installer Juvem depuis la fiche Play Store.</p><p>Si Google Play vous demande de rester inscrit pendant une durée minimale de test, suivez les consignes fournies dans l’invitation. Vous restez libre d’arrêter votre participation.</p></div>
+        <aside class="status-card"><div class="status-icon" aria-hidden="true">⌛</div><h3>Distribution en préparation</h3><p>La fiche Google Play, le canal de test et la Preview doivent encore être vérifiés sur appareil. Les liens d’installation apparaîtront ici uniquement lorsqu’ils fonctionneront.</p><span class="status-chip">Aucun APK public pour le moment</span></aside>
+      </div>
+    </section>
+
+    <section class="section" id="preview">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Preview Android · À venir</span>
+          <h2>Tester sans utiliser ses données personnelles.</h2>
+          <p>La future application <strong>Juvem Preview</strong> sera séparée de Juvem et proposera quatre jeux de données entièrement fictifs. Elle pourra être installée à côté de la version Play Store, sans toucher à son journal.</p>
+        </div>
+        <div class="grid two">
+          <article class="card"><h3>Découverte</h3><p>3 humeurs et 2 notes fictives pour prendre en main l'application.</p></article>
+          <article class="card"><h3>Semaine variée</h3><p>14 humeurs et 7 notes pour tester l'historique et la navigation.</p></article>
+          <article class="card"><h3>Période difficile</h3><p>10 humeurs, 5 notes et un plan de soutien inventé, pour vérifier la clarté et les parcours d'aide.</p></article>
+          <article class="card"><h3>Historique long</h3><p>90 humeurs et 45 notes pour vérifier la fluidité, la lecture et le défilement.</p></article>
+        </div>
+        <div class="notice">
+          <span class="notice-symbol" aria-hidden="true">!</span>
+          <div><strong>Comment charger un scénario ?</strong>
+            <p>Dans la Preview : <strong>Paramètres → Outils de test — Preview → Charger des données de test</strong>. Confirmez le remplacement des données de cette Preview. Les scénarios ne contiennent aucun contact réel.</p>
+            <p>Vous pourrez également tester l'export/import depuis <strong>Paramètres → Mes données</strong>. Les fichiers <code>.juvem</code> sont chiffrés avec un mot de passe personnel d'au moins 12 caractères. Un import remplace les données de l'application concernée, après confirmation.</p>
+            <p>Évitez d'utiliser des informations réelles et <strong>ne partagez jamais un fichier de sauvegarde ou son mot de passe</strong> avec GolApp Studio. La Preview n'est pas encore distribuée : aucun lien APK n'est annoncé avant validation.</p>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -76,7 +100,7 @@
         <div class="grid two">
           <div class="check-card"><div class="check-icon" aria-hidden="true">01</div><div><h3>Premiers pas</h3><p>Comprendre l'accueil, la présentation initiale et les indications de confidentialité.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">02</div><div><h3>Humeurs et besoins</h3><p>Noter une humeur, puis essayer les questions facultatives : émotions, intensité, événement et besoin.</p></div></div>
-          <div class="check-card"><div class="check-icon" aria-hidden="true">03</div><div><h3>Journal personnel</h3><p>Ajouter et modifier une note de test, puis l'associer volontairement à un ressenti.</p></div></div>
+          <div class="check-card"><div class="check-icon" aria-hidden="true">03</div><div><h3>Journal personnel</h3><p>Ajouter et modifier une note fictive, puis l'associer volontairement à une humeur.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">04</div><div><h3>Choisir une activité</h3><p>Choisir une activité selon ses besoins, changer d’avis ou quitter l’écran librement.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">05</div><div><h3>Faire une pause</h3><p>Essayer les pauses de 30, 60 ou 90 secondes et vérifier qu’il est facile de les arrêter.</p></div></div>
           <div class="check-card"><div class="check-icon" aria-hidden="true">06</div><div><h3>Affichage, langue et confort</h3><p>Dans les paramètres, essayer les thèmes clair, sombre et « suivre le téléphone ». Passer du français à l’anglais, puis revenir à la langue du téléphone. Vérifier aussi les grands caractères, le défilement des longs écrans et la conservation des préférences après redémarrage.</p></div></div>
