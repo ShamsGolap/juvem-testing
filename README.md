@@ -4,7 +4,7 @@ Portail public de GolApp Studio pour préparer et accompagner le test fermé de 
 
 ## Accès
 
-- URL prévue : https://shamsgolap.github.io/juvem-testing/
+- URL publique : https://shamsgolap.github.io/juvem-testing/ (accessibilité à vérifier après chaque modification)
 - Dépôt : https://github.com/ShamsGolap/juvem-testing
 - Confidentialité : https://shamsgolap.github.io/juvem-privacy/
 - Application source (privée) : `ShamsGolap/juvem`, branche `develop`.
@@ -19,21 +19,19 @@ Portail public de GolApp Studio pour préparer et accompagner le test fermé de 
 - Prévention contre les partages de données sensibles et les faux appels d'urgence.
 - Liens vers la politique de confidentialité et le site GolApp Studio.
 
-## Publication GitHub Pages (à activer dans les paramètres du dépôt)
+## Hébergement et mise à jour
 
-**Settings → Pages → Build and deployment → Source : Deploy from a branch → Branch : main / (root) → Save.**
+Site statique maintenu sur `main / (root)` de GitHub Pages. Une mise à jour du dépôt peut provoquer une publication automatique gérée par GitHub ; aucun workflow Actions personnalisé ne doit être introduit ou lancé. Vérifier le rendu public après chaque modification.
 
-Les connecteurs GitHub autorisés dans cette conversation n'exposent pas l'opération de configuration GitHub Pages. La création des fichiers **n'atteste donc pas** que le site est déjà publié.
+## Situation de Juvem Bêta 1 — 31 octobre 2026
 
-## Mise à jour du 31 octobre 2026
-
-La présentation et les scénarios de test ont été actualisés après le travail d’ergonomie et de préférences sur `develop`. Le portail reste informatif : aucun lien Google Play n'est annoncé avant sa création effective.
+Les PR #2, #3 et #4 sont intégrées à `develop` (`0.1.0-beta.1+1`). Les tests Flutter et la recette Android ne sont pas encore attestés. Le portail couvre la Preview isolée, les quatre jeux fictifs, le stockage local chiffré et les sauvegardes protégées par mot de passe. **Aucun lien Play Store ou APK n'est annoncé comme disponible.**
 
 ## Preview et Google Play
 
 La Preview debug est construite séparément avec `flutter build apk --debug -t lib/main_preview.dart` : identifiant `com.golappstudio.juvem.preview`. Elle n'est pas compatible avec la fiche Google Play du package `com.golappstudio.juvem` sans une seconde application Play Console. Ne pas mélanger les deux parcours ni annoncer une publication non vérifiée.
 
-## Quand le test sera créé
+## Quand le test sera disponible
 
 1. Remplacer le message « test en préparation » par des liens Google Play **réellement générés** et vérifiés (opt-in + fiche), après ouverture du programme.
 2. Ajouter la version et la date de sortie effectivement publiées.
