@@ -15,6 +15,7 @@ Portail public de GolApp Studio pour préparer et accompagner le test fermé de 
 - Inscription volontaire par e-mail (le site n'envoie aucune donnée lui-même).
 - Instructions pour rejoindre le **futur** test fermé Google Play, sans prétendre que les liens sont déjà disponibles.
 - Parcours de recette centrés sur les humeurs, le journal, les pauses, les thèmes **système / clair / sombre**, les langues **système / français / anglais**, les grands caractères et l'accessibilité.
+- Section **Juvem Preview** : quatre jeux de données fictifs (3, 14, 10 ou 90 humeurs) et tests d'export/import chiffré par mot de passe. La distribution de l'APK n'est pas encore ouverte.
 - Prévention contre les partages de données sensibles et les faux appels d'urgence.
 - Liens vers la politique de confidentialité et le site GolApp Studio.
 
@@ -27,6 +28,10 @@ Les connecteurs GitHub autorisés dans cette conversation n'exposent pas l'opér
 ## Mise à jour du 31 octobre 2026
 
 La présentation et les scénarios de test ont été actualisés après le travail d’ergonomie et de préférences sur `develop`. Le portail reste informatif : aucun lien Google Play n'est annoncé avant sa création effective.
+
+## Preview et Google Play
+
+La Preview debug est construite séparément avec `flutter build apk --debug -t lib/main_preview.dart` : identifiant `com.golappstudio.juvem.preview`. Elle n'est pas compatible avec la fiche Google Play du package `com.golappstudio.juvem` sans une seconde application Play Console. Ne pas mélanger les deux parcours ni annoncer une publication non vérifiée.
 
 ## Quand le test sera créé
 
