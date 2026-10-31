@@ -7,14 +7,14 @@ Portail public de GolApp Studio pour préparer et accompagner le test fermé de 
 - URL prévue : https://shamsgolap.github.io/juvem-testing/
 - Dépôt : https://github.com/ShamsGolap/juvem-testing
 - Confidentialité : https://shamsgolap.github.io/juvem-privacy/
-- Application source (privée) : `ShamsGolap/juvem`, branche `feature/juvem-v1`.
+- Application source (privée) : `ShamsGolap/juvem`, branche `develop`.
 
 ## Contenu
 
 - Site statique en français, responsive, sans dépendance, JavaScript, analytics, formulaire ou cookie applicatif.
 - Inscription volontaire par e-mail (le site n'envoie aucune donnée lui-même).
 - Instructions pour rejoindre le **futur** test fermé Google Play, sans prétendre que les liens sont déjà disponibles.
-- Parcours de recette centrés sur les humeurs, journal, besoins, pauses et accessibilité.
+- Parcours de recette centrés sur les humeurs, le journal, les pauses, les thèmes **système / clair / sombre**, les langues **système / français / anglais**, les grands caractères et l'accessibilité.
 - Prévention contre les partages de données sensibles et les faux appels d'urgence.
 - Liens vers la politique de confidentialité et le site GolApp Studio.
 
@@ -23,6 +23,10 @@ Portail public de GolApp Studio pour préparer et accompagner le test fermé de 
 **Settings → Pages → Build and deployment → Source : Deploy from a branch → Branch : main / (root) → Save.**
 
 Les connecteurs GitHub autorisés dans cette conversation n'exposent pas l'opération de configuration GitHub Pages. La création des fichiers **n'atteste donc pas** que le site est déjà publié.
+
+## Mise à jour du 31 octobre 2026
+
+La présentation et les scénarios de test ont été actualisés après le travail d’ergonomie et de préférences sur `develop`. Le portail reste informatif : aucun lien Google Play n'est annoncé avant sa création effective.
 
 ## Quand le test sera créé
 
